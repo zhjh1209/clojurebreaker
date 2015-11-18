@@ -1,0 +1,43 @@
+(in-ns clojurebreaker.models.game)
+(in-ns 'clojurebreaker.models.game)
+(dotimes [_ 5] (println create))
+(println create)
+(in-ns 'clojurebreaker.server)
+(println "s")
+(dotimes [_ 5] (println (clojurebreaker.models.game/create)))
+(compile 'clojurebreaker.models.game)
+(dotimes [_ 5] (println (clojurebreaker.models.game/create)))
+:q
+quit
+(in-ns 'clojurebreaker.views.welcome)
+(board)
+(compile 'clojurebreaker.views.welcome)
+quit
+(in-ns 'clojurebreaker.views.welcome)
+(board)
+(board {:one "r" :two "y" :three "y" :four "g"})
+(compile 'clojurebreaker.views.welcome)
+(compile 'clojurebreaker.models.game)
+quit
+(in-ns 'clojurebreaker.views.welcome)
+(board {:one "r" :two "b" :three "y" :four "g" :exact 2 :unordered 0})
+quit
+(keyword "a")
+lein repl
+quit
+(doc session/put!)
+(session/put!)
+(in-ns 'clojurebreaker.views.welcome)
+(doc session/put!)
+(doc session/flash-put!)
+quit
+(in-ns 'clojurebreaker.views.welcome)
+(doc session/swap!)
+(doc session/noir-flash)
+(doc session/put!)
+(doc session/flash-put!)
+quit
+(= :r "r")
+(= :r :r)
+lein run
+quit
